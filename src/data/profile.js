@@ -8,7 +8,7 @@ export const profile = {
   greeting: 'Halo, saya',
   headline: 'Membangun aplikasi dan infrastruktur yang andal, dari kode sampai jaringan.',
   intro:
-    'Mahasiswa Teknologi Informasi Politeknik Negeri Padang dan juara 1 Hackathon PENS 2026 lewat TalentLink, Digital Worker AI untuk kampus. Saya juga membuat aplikasi web seperti Sistem PPDB SMA Kota Padang.',
+    'Mahasiswa Teknologi Informasi Politeknik Negeri Padang dan juara 1 Hackathon PENS 2026 lewat TalentLink, Digital Worker untuk kampus. Saya juga membuat aplikasi web seperti Sistem PPDB SMA Kota Padang.',
   photo: '/assets/profile/rifqi.jpg',
   photoAlt: 'Foto profil Rifqi Maulana Akbar',
   photoIsPlaceholder: false,

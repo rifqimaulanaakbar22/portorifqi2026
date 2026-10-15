@@ -7,11 +7,11 @@ export const projects = [
     placeholder: false,
     title: 'TalentLink Campus',
     summary:
-      'Digital Worker AI untuk kampus yang mencari, menilai, dan merekomendasikan mahasiswa untuk riset dosen dan tim lomba. Setiap rekomendasi menunjuk ke bukti yang bisa dibuka, dan setiap tindakan menunggu persetujuan manusia.',
+      'Digital Worker untuk kampus yang mencari, menilai, dan merekomendasikan mahasiswa untuk riset dosen dan tim lomba. Setiap rekomendasi menunjuk ke bukti yang bisa dibuka, dan setiap tindakan menunggu persetujuan manusia.',
     image: null,
     imageAlt: '',
     badge: 'Juara 1 Hackathon PENS 2026',
-    tech: ['AI', 'Digital Worker'],
+    tech: ['TypeScript', 'Next.js', 'React', 'Digital Worker'],
     status: null,
     role: null,
     features: [
