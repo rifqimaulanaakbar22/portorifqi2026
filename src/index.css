@@ -1,0 +1,53 @@
+@import '@fontsource-variable/plus-jakarta-sans';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+  }
+  :focus-visible {
+    outline: 3px solid #7C3AED;
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .section-pad { @apply px-5 py-20 sm:px-8 md:py-28; }
+  .container-x { @apply mx-auto w-full max-w-6xl; }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold transition-colors duration-200;
+  }
+  .btn-primary { @apply bg-brand-500 text-white hover:bg-brand-700; }
+  .btn-outline { @apply border-2 border-brand-500 text-brand-600 hover:bg-brand-50; }
+  .tag { @apply rounded-full bg-brand-50 px-3 py-1 text-xs font-medium text-brand-700; }
+  .placeholder-badge { @apply rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-semibold text-amber-900; }
+}
+
+@keyframes blob-morph {
+  0%, 100% { border-radius: 58% 42% 55% 45% / 48% 56% 44% 52%; }
+  50% { border-radius: 44% 56% 42% 58% / 55% 45% 55% 45%; }
+}
+.blob-shape { animation: blob-morph 14s ease-in-out infinite; }
+
+@keyframes hero-in {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: none; }
+}
+.hero-in { animation: hero-in 0.7s ease-out both; }
+.hero-in-2 { animation-delay: 0.12s; }
+.hero-in-3 { animation-delay: 0.24s; }
